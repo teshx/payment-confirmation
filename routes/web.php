@@ -19,3 +19,13 @@ Route::post('/payments', [PaymentController::class, 'store']);
 Route::put('/payments/{uppdate}', [PaymentController::class, 'update']);
 Route::delete('/payments/delete/{delete}', [PaymentController::class, 'delete']);
 Route::get('/admin/payments', [PaymentController::class, 'allpayments']);
+
+
+
+// this is post routes
+
+
+Route::get('/posts', [PostController::class, 'index']);
+Route::post('/posts', [PostController::class, 'create']);
+Route::put('/posts/{id}', [PostController::class, 'update']);
+Route::delete('/posts/{id}', [PostController::class, 'destroy']);
